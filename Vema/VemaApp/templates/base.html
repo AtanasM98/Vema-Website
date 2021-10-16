@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>
+	{% block title %}{% endblock %}
+	</title>
+</head>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+{% load static %}
+<script src="{% static 'js/bootstrap.js' %}"></script>
+<link rel="stylesheet" href="{% static 'css/bootstrap.css' %}">
+<link rel="stylesheet" href="{% static 'css/stylesheet.css' %}">
+{% load static %}
+<style>
+#container-body{
+	background-image: url( "{% static 'images/back.png'%}");
+}
+</style>
+<body id="container-body">
+{% block navbar %}
+	<nav id="navbar-override" class="navbar navbar-expand-lg navbar-dark bg-dark">
+		<div>
+			{% load static %}
+			<img class="logo_banner" src="{% static 'logo\\vema-logo-long.png' %}" alt="Vema Logo"/>
+		</div>
+		<div class="collapse navbar-collapse" id="navbarSupportedContent">
+			<ul class="navbar-nav mr-auto">
+				<li class="nav-item active">
+					<a class="nav-link" href="/">Начало</a>
+				</li>
+				<li class="nav-item dropdown">
+					<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown"
+					   role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+						Какво предлагаме
+					</a>
+				<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+					<a class="dropdown-item" href="networks">Мрежи</a>
+					<a class="dropdown-item" href="el_control">Ел. Табла</a>
+					<a class="dropdown-item" href="pump_inst">Помпени Инсталации</a>
+					<div class="dropdown-divider"></div>
+						<a class="dropdown-item" href="consult">Консултации</a>
+					</div>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="/clients">Наши Клиенти</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="/contacts">Контакти</a>
+				</li>
+			</ul>
+		</div>
+	</nav>
+{% endblock %}
+<div class="container">
+{% block content %}
+{% endblock %}
+</div>
+</body>
+</html>
