@@ -1,67 +1,123 @@
 <!DOCTYPE html>
 <html lang="bg">
-	<head>
-		<meta content="text/html; charset=UTF-8" http-equiv="Content-Type">
-		<title>
-			Контакти
-		</title>
-	</head>
-	<script type="text/javascript" src="/static/script/jquery.min.js"></script>
-	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
-	<link rel="stylesheet" href="/static/css/bootstrap.css">
-	<link rel="stylesheet" href="/static/css/stylesheet.css">
-	<style>
-	#container-body{
-		background-image: url( "static\\images\\back.png");
-	}
-	a {
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Контакти – ВЕМА 2005 ООД</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,600;1,9..40,300&family=DM+Serif+Display:ital@0;1&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="static/css/stylesheet.css">
+</head>
+<body>
 
-	}
-	footer {
-		position: fixed;
-		width: 100%;
-		left: 0;
-		bottom: 0;
-		padding-top: 5px;
-		background-color: #6189b3 !important;
-		color: white;
-		text-align: center;
-  		font-weight: bold;
-	}
-	</style>
-	<body id="container-body">
-		<nav id="navbar-override" class="navbar navbar-expand-lg navbar-dark bg-dark">
-			<div>
-				<img class="logo_banner" src="static\\logo\\vema-logo-long.png" alt="Vema Logo"/>
-			</div>
-			<div class="collapse navbar-collapse" id="navbarSupportedContent">
-				<ul class="navbar-nav mr-auto">
-					<li class="nav-item active">
-						<a class="nav-link" href="/">Начало</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link" href="/clients.html">Наши Клиенти</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link" href="/contacts.html">Контакти</a>
-					</li>
-				</ul>
-			</div>
-		</nav>
-		<div class="container">
-			<h2>Чувствайте се свободни да се свържете с нас</h2>
-			<p>
-				<b>ВЕМА 2005 ООД</b><br>
-				<a href="https://www.google.com/maps/place/ul.+%22Rodopski+Izvor%22+3,+1680+Borovo,+Sofia,+Bulgaria/@42.6722117,23.2863839,17z/data=!3m1!4b1!4m5!3m4!1s0x40aa84dd1cf74f33:0xf290dcbad988ec9c!8m2!3d42.6722117!4d23.2885726" target="_blank">
-					ул. Родопски Извор 3, гр. София<br>
-				</a>
-				vema2005@abv.bg <br>
-				+359 888 620 320 - инж. Мариан Марчев <br>
-				+359 888 920 179 - инж. Вестислав Марин <br>
-			</p>
-		</div><br><br>
-		<footer>
-			<p>Copyright &copy; 2021 Вема 2005</p>
-		</footer>
-	</body>
+  <!-- NAV -->
+  <header>
+    <nav>
+      <div class="logo">
+        <img class="logo_banner" src="static/logo/vema-logo-long.png" alt="Vema Logo"/>
+        <a class="logo" href="/new-versionic">ВЕМА <span>2005</span></a>
+      </div>
+      <ul>
+        <li><a href="/new-version/static">Начало</a></li>
+        <li><a href="/Vema/clients.html">Наши Клиенти</a></li>
+        <li><a href="/Vema/contacts.html" class="active">Контакти</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- PAGE HERO -->
+  <section class="page-hero">
+    <div class="page-hero-inner">
+      <div class="hero-tag">Очакваме ви</div>
+      <h1><em>Свържете</em> се с нас</h1>
+    </div>
+  </section>
+
+  <div class="divider-bar"></div>
+
+  <!-- CONTACT CONTENT -->
+  <section class="contact-section">
+
+    <!-- Left: Info -->
+    <div class="contact-info">
+      <div>
+        <p class="section-label">Фирма</p>
+        <h2 class="company-name">ВЕМА 2005 ООД</h2>
+      </div>
+
+      <div class="contact-cards">
+
+        <!-- Address -->
+        <a class="contact-card" href="https://www.google.com/maps/place/ul.+%22Rodopski+Izvor%22+3,+1680+Borovo,+Sofia,+Bulgaria/@42.6722117,23.2863839,17z" target="_blank" rel="noopener">
+          <div class="contact-card-icon">
+            <svg viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z"/><circle cx="12" cy="9" r="2.5"/></svg>
+          </div>
+          <div class="contact-card-body">
+            <div class="contact-card-label">Адрес</div>
+            <div class="contact-card-value">ул. Родопски Извор 3<br />гр. София</div>
+            <div class="contact-card-sub">Отвори в Google Maps →</div>
+          </div>
+        </a>
+
+        <!-- Email -->
+        <a class="contact-card" href="mailto:vema2005@abv.bg">
+          <div class="contact-card-icon">
+            <svg viewBox="0 0 24 24"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m2 7 10 7 10-7"/></svg>
+          </div>
+          <div class="contact-card-body">
+            <div class="contact-card-label">Имейл</div>
+            <div class="contact-card-value">vema2005@abv.bg</div>
+          </div>
+        </a>
+
+        <!-- Phone 1 -->
+        <a class="contact-card" href="tel:+359888620320">
+          <div class="contact-card-icon">
+            <svg viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.07 12a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3 1.18h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.09 8.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+          </div>
+          <div class="contact-card-body">
+            <div class="contact-card-label">Телефон</div>
+            <div class="contact-card-value">+359 888 620 320</div>
+            <div class="contact-card-sub">инж. Мариан Марчев</div>
+          </div>
+        </a>
+
+        <!-- Phone 2 -->
+        <a class="contact-card" href="tel:+359888920179">
+          <div class="contact-card-icon">
+            <svg viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.07 12a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3 1.18h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.09 8.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+          </div>
+          <div class="contact-card-body">
+            <div class="contact-card-label">Телефон</div>
+            <div class="contact-card-value">+359 888 920 179</div>
+            <div class="contact-card-sub">инж. Вестислав Марин</div>
+          </div>
+        </a>
+
+      </div>
+    </div>
+
+    <!-- Right: Map -->
+    <div class="map-col">
+      <p class="map-label">Локация</p>
+      <div class="map-wrapper">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2934.4244634!2d23.2863839!3d42.6722117!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40aa84dd1cf74f33%3A0xf290dcbad988ec9c!2sul.%20%22Rodopski%20Izvor%22%203%2C%201680%20Borovo%2C%20Sofia%2C%20Bulgaria!5e0!3m2!1sen!2sbg!4v1700000000000"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+          title="ВЕМА 2005 ООД местоположение">
+        </iframe>
+      </div>
+    </div>
+
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <p><strong>Copyright © 2021 Вема 2005</strong></p>
+  </footer>
+
+</body>
 </html>

@@ -1,121 +1,384 @@
 <!DOCTYPE html>
 <html lang="bg">
-	<head>
-		<meta content="text/html; charset=UTF-8" http-equiv="Content-Type">
-		<title>
-			Клиенти
-		</title>
-	</head>
-	<script type="text/javascript" src="/static/script/jquery.min.js"></script>
-	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
-	<link rel="stylesheet" href="/static/css/bootstrap.css">
-	<link rel="stylesheet" href="/static/css/stylesheet.css">
-	<style>
-	#container-body{
-		background-image: url( "static\\images\\back.png");
-	}
-	footer {
-		position: fixed;
-		width: 100%;
-		left: 0;
-		bottom: 0;
-		padding-top: 5px;
-		background-color: #6189b3 !important;
-		color: white;
-		text-align: center;
-  		font-weight: bold;
-	}
-	</style>
-	<body id="container-body">
-		<nav id="navbar-override" class="navbar navbar-expand-lg navbar-dark bg-dark">
-			<div>
-				<img class="logo_banner" src="static\\logo\\vema-logo-long.png" alt="Vema Logo"/>
-			</div>
-			<div class="collapse navbar-collapse" id="navbarSupportedContent">
-				<ul class="navbar-nav mr-auto">
-					<li class="nav-item active">
-						<a class="nav-link" href="/">Начало</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link" href="/clients.html">Наши Клиенти</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link" href="/contacts.html">Контакти</a>
-					</li>
-				</ul>
-			</div>
-		</nav>
-		<div class="container">
-			<h2>Наши Клиенти</h2>
-			<p>
-				- Национално Бюро за Териториално Убежище и Бежанците към Министерски Съвет на Република България <br>
-				(сега Държавна агенция за бежанците при Министерския съвет) - София, ул. "Монтевидео" №21 <br>
-				- Агенция по Заетостта - Централно Управление, София, бул. “Дондуков” №3 <br>
-				- Главна Инспекция по Труда - Централно Управление, София, бул. “Дондуков” №3 <br>
-				- Министерство на Труда и Социалната Политика – София, ул. “Триадица” №2. <br>
-				- Регионална Служба по Заетостта – Благоевград, Русе, Варна, Пловдив, Пазарджик <br>
-				- Бюро по Труда – Попово, Карнобат, Първомай, Велинград, Пещера, Харманли, Велико Търново <br>
-				- Министерство на Промишлеността - София, ул. “Славянска” <br>
-				- ЦС на ТПК - София, бул. “Дондуков” <br>
-				- 7М - офис гр. София <br>
-				- Фестивест - Административна сграда - София, ул. “Иван Асен II” <br>
-				- Инсешън - офис, гр. София <br>
-				- Министерство на правосъдието и правната евроинтеграция - София – PHARE <br>
-				- Копирен център на Колбис АД – София, бул. “Дондуков” №3 <br>
-				- Колбис АД - Административна сграда - София, ул. “Кирил и Методий” <br>
-				- Евротонер ЕООД – гр. София, ул. „Плана Планина” 2Б <br>
-				- РУДИДИ ЕООД – гр. София, ул. „Д-р Стоимен Петров” 9 <br>
-				- Агенция Атлантик ЕООД – гр. София, ул. „Сребърна” 21 <br>
-				- АРОМА АД – София, ул.”К. Благоев” №10 <br>
-				- Грей – София – офис, гр. София <br>
-				- Държавна Агенция за Закрила на Детето – София, ул. “Триадица” №2 <br>
-				- Преквалификационен център – Бобов дол – PHARE <br>
-				- Копирен център на “Колбис” АД – София, НДК <br>
-				- Радио Витоша – София <br>
-				- А&С – Офис, гр. София <br>
-				- Помпен Център София  ЕООД – гр. София, ул. “Метличина Поляна”, бл.31 <br>
-				- Булгеоинвест ЕООД - гр. София ж.к. "Гоце Делчев", бл. 241, вх.9 <br>
-				- НДК - София <br>
-				- МОСТ – АД, ул. "Траян Танев" №78 <br>
-				- ИНТЕРПРЕД - СТЦ СОФИЯ АД <br>
-				- ЕКОМ ЕООД = гр. София, ж.к. "Яворов", бл.43, вх.А <br>
-				- АГЕЛ ООД - София, ул. "Подп. Калитин" №32 <br>
-				- БОРА ООД - гр. София, ул. "Любляна" №46 <br>
-				- Цанев и син ООД - гр. София, ул. "Козлодуй" №99 <br>
-				- ИЯИЯЕ – БАН - гр. София, бул. Цариградско шосе №72 <br>
-				- Чистота Искър ЕООД - гр. София, ул. Искърско шосе №2 <br>
-				- Промтрейд ЕООД - гр. София, бул. "Христо Смирненски" №60 <br>
-				- Парк-Хотел Москва АД - гр.София, ул. "Незабравка" №25 <br>
-				- Военна Болница – гр.София, ул. "Георги Софийски" №3 <br>
-				- БДПЛР – гр. Банкя, ул "Иван Вазов" №5 <br>
-				- Микс Констръкшън ООД - гр.София, ул. "Луи Айер" №2 <br>
-				- МП – ГДИН – Затвор - гр.София <br>
-				- ГЕЛАК ООД – гр. София, ул. „Черковна” 75 <br>
-				- Аматица АД – с. Ковачевци <br>
-				- Бараж и Ко ЕООД – гр. София, ул. „Николай Хайтов” 2 <br>
-				- П. З. Електроник ООД – гр. София, ул. „Бурел” 41В <br>
-				- 126 ОУ П. Ю. Тодоров – гр. София, бул. „България” 43 <br>
-				- С. Р. К. Корали АД – гр. София, ул. „Цветна Градина” 16 <br>
-				- Минстрой Холдинг АД – гр. София, бул. „Драган Цанков” 172 <br>
-				- ИРИСИСТ ЕООД – Панчарево, ул. „Риляник” 19 <br>
-				- ВИДМАР ЕООД – гр. София, бул. „Христо Ботев” 13 <br>
-				- Сити Евро ЕООД – гр. София, ул. „Цветна Градина” 5 <br>
-				- ЛАДА Груп ЕООД – гр. София, ж.к. "Люлин", бл.986 <br>
-				- Сдр-е SOS Детски Селища България – гр. София, ул. „Паскал Тодоров” 8А <br>
-				- Камор Ауто ЕООД – гр. София, ул. „Бизнес Парк” 5 <br>
-				- Рамстрой ЕООД – гр. София, ул. „Майстор Алекси Рилец” 38 <br>
-				- Балканфарма Дупница АД – гр. Дупница, ул. „Самоковско шосе” 3 <br>
-				- П. Дусман ЕООД – гр. София, ул. „Климент Охридски” 4 <br>
-				- Столична Община – Район Средец – гр. София, ул. „Леге” 6 <br>
-				- ТУ – София – гр. София, бул. „Климент Охридски” 8 <br>
-				- 192 СОУ– Бистрица, ул. „Просвета” 11 <br>
-				- Районен съд - Тетевен – гр. Тетевен, ул. „Христо Ботев” 3А <br>
-				- Ауто Плюс България АД – гр. София, ул. „Околовръстен Път” 370 <br>
-				- Шенкер ЕООД – гр. София, бул. „Искърско шосе” 7 <br>
-			</p>
-		</div><br><br>
-		<footer>
-			<p>Copyright &copy; 2021 Вема 2005</p>
-		</footer>
-	</body>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Наши Клиенти – ВЕМА 2005 ООД</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,600;1,9..40,300&family=DM+Serif+Display:ital@0;1&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="static/css/stylesheet.css">
+</head>
+<body>
+  <!-- NAV -->
+  <header>
+    <nav>
+      <div class="logo">
+        <img class="logo_banner" src="static/logo/vema-logo-long.png" alt="Vema Logo"/>
+        <a class="logo" href="/new-versionic">ВЕМА <span>2005</span></a>
+      </div>
+      <ul>
+        <li><a href="/new-version/static">Начало</a></li>
+        <li><a href="/Vema/clients.html" class="active">Наши Клиенти</a></li>
+        <li><a href="/Vema/contacts.html">Контакти</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- PAGE HERO -->
+  <section class="page-hero">
+    <div class="page-hero-inner">
+      <div class="hero-tag">Доверие, изградено с години</div>
+      <h1>Наши <em>Клиенти</em></h1>
+    </div>
+  </section>
+
+  <div class="divider-bar"></div>
+
+  <!-- CLIENTS -->
+  <section class="clients-section">
+    <p class="section-label">Партньори</p>
+    <p class="section-intro">Горди сме с доверието, което ни е оказано от държавни институции, частни компании и организации в цялата страна.</p>
+
+    <div class="counter-row">
+      <div class="counter">
+        <div class="counter-number">65<span>+</span></div>
+        <div class="counter-label">Клиента</div>
+      </div>
+      <div class="counter">
+        <div class="counter-number">20<span>+</span></div>
+        <div class="counter-label">Години опит</div>
+      </div>
+      <div class="counter">
+        <div class="counter-number">10<span>+</span></div>
+        <div class="counter-label">Града в България</div>
+      </div>
+    </div>
+
+    <div class="clients-grid">
+
+      <div class="client-item">
+        <div class="client-name">Национално Бюро за Териториално Убежище и Бежанците към Министерски Съвет на Република България <span style="font-weight:300;">(сега Държавна агенция за бежанците при Министерския съвет)</span></div>
+        <div class="client-address">София, ул. „Монтевидео" №21</div>
+      </div>
+
+      <div class="client-item">
+        <div class="client-name">Агенция по Заетостта – Централно Управление</div>
+        <div class="client-address">София, бул. „Дондуков" №3</div>
+      </div>
+
+      <div class="client-item">
+        <div class="client-name">Главна Инспекция по Труда – Централно Управление</div>
+        <div class="client-address">София, бул. „Дондуков" №3</div>
+      </div>
+
+      <div class="client-item">
+        <div class="client-name">Министерство на Труда и Социалната Политика</div>
+        <div class="client-address">София, ул. „Триадица" №2</div>
+      </div>
+
+      <div class="client-item">
+        <div class="client-name">Регионална Служба по Заетостта</div>
+        <div class="client-address">Благоевград, Русе, Варна, Пловдив, Пазарджик</div>
+      </div>
+
+      <div class="client-item">
+        <div class="client-name">Бюро по Труда</div>
+        <div class="client-address">Попово, Карнобат, Първомай, Велинград, Пещера, Харманли, Велико Търново</div>
+      </div>
+
+      <div class="client-item">
+        <div class="client-name">Министерство на Промишлеността</div>
+        <div class="client-address">София, ул. „Славянска"</div>
+      </div>
+
+      <div class="client-item">
+        <div class="client-name">ЦС на ТПК</div>
+        <div class="client-address">София, бул. „Дондуков"</div>
+      </div>
+
+      <div class="client-item">
+        <div class="client-name">7М</div>
+        <div class="client-address">офис, гр. София</div>
+      </div>
+
+      <div class="client-item">
+        <div class="client-name">Фестивест – Административна сграда</div>
+        <div class="client-address">София, ул. „Иван Асен II"</div>
+      </div>
+
+      <div class="client-item">
+        <div class="client-name">Инсешън</div>
+        <div class="client-address">офис, гр. София</div>
+      </div>
+
+      <div class="client-item">
+        <div class="client-name">Министерство на правосъдието и правната евроинтеграция – PHARE</div>
+        <div class="client-address">София</div>
+      </div>
+
+      <div class="client-item">
+        <div class="client-name">Копирен център на Колбис АД</div>
+        <div class="client-address">София, бул. „Дондуков" №3</div>
+      </div>
+
+      <div class="client-item">
+        <div class="client-name">Колбис АД – Административна сграда</div>
+        <div class="client-address">София, ул. „Кирил и Методий"</div>
+      </div>
+
+      <div class="client-item">
+        <div class="client-name">Евротонер ЕООД</div>
+        <div class="client-address">гр. София, ул. „Плана Планина" 2Б</div>
+      </div>
+
+      <div class="client-item">
+        <div class="client-name">РУДИДИ ЕООД</div>
+        <div class="client-address">гр. София, ул. „Д-р Стоимен Петров" 9</div>
+      </div>
+
+      <div class="client-item">
+        <div class="client-name">Агенция Атлантик ЕООД</div>
+        <div class="client-address">гр. София, ул. „Сребърна" 21</div>
+      </div>
+
+      <div class="client-item">
+        <div class="client-name">АРОМА АД</div>
+        <div class="client-address">София, ул. „К. Благоев" №10</div>
+      </div>
+
+      <div class="client-item">
+        <div class="client-name">Грей – София</div>
+        <div class="client-address">офис, гр. София</div>
+      </div>
+
+      <div class="client-item">
+        <div class="client-name">Държавна Агенция за Закрила на Детето</div>
+        <div class="client-address">София, ул. „Триадица" №2</div>
+      </div>
+
+      <div class="client-item">
+        <div class="client-name">Преквалификационен център – Бобов дол – PHARE</div>
+        <div class="client-address">Бобов дол</div>
+      </div>
+
+      <div class="client-item">
+        <div class="client-name">Копирен център на „Колбис" АД</div>
+        <div class="client-address">София, НДК</div>
+      </div>
+
+      <div class="client-item">
+        <div class="client-name">Радио Витоша</div>
+        <div class="client-address">София</div>
+      </div>
+
+      <div class="client-item">
+        <div class="client-name">А&С</div>
+        <div class="client-address">офис, гр. София</div>
+      </div>
+
+      <div class="client-item">
+        <div class="client-name">Помпен Център София ЕООД</div>
+        <div class="client-address">гр. София, ул. „Метличина Поляна", бл. 31</div>
+      </div>
+
+      <div class="client-item">
+        <div class="client-name">Булгеоинвест ЕООД</div>
+        <div class="client-address">гр. София, ж.к. „Гоце Делчев", бл. 241, вх. 9</div>
+      </div>
+
+      <div class="client-item">
+        <div class="client-name">НДК</div>
+        <div class="client-address">София</div>
+      </div>
+
+      <div class="client-item">
+        <div class="client-name">МОСТ АД</div>
+        <div class="client-address">ул. „Траян Танев" №78</div>
+      </div>
+
+      <div class="client-item">
+        <div class="client-name">ИНТЕРПРЕД – СТЦ СОФИЯ АД</div>
+        <div class="client-address">София</div>
+      </div>
+
+      <div class="client-item">
+        <div class="client-name">ЕКОМ ЕООД</div>
+        <div class="client-address">гр. София, ж.к. „Яворов", бл. 43, вх. А</div>
+      </div>
+
+      <div class="client-item">
+        <div class="client-name">АГЕЛ ООД</div>
+        <div class="client-address">София, ул. „Подп. Калитин" №32</div>
+      </div>
+
+      <div class="client-item">
+        <div class="client-name">БОРА ООД</div>
+        <div class="client-address">гр. Sofia, ул. „Любляна" №46</div>
+      </div>
+
+      <div class="client-item">
+        <div class="client-name">Цанев и син ООД</div>
+        <div class="client-address">гр. Sofia, ул. „Козлодуй" №99</div>
+      </div>
+
+      <div class="client-item">
+        <div class="client-name">ИЯИЯЕ – БАН</div>
+        <div class="client-address">гр. Sofia, бул. „Цариградско шосе" №72</div>
+      </div>
+
+      <div class="client-item">
+        <div class="client-name">Чистота Искър ЕООД</div>
+        <div class="client-address">гр. Sofia, ул. „Искърско шосе" №2</div>
+      </div>
+
+      <div class="client-item">
+        <div class="client-name">Промтрейд ЕООД</div>
+        <div class="client-address">гр. Sofia, бул. „Христо Смирненски" №60</div>
+      </div>
+
+      <div class="client-item">
+        <div class="client-name">Парк-Хотел Москва АД</div>
+        <div class="client-address">гр. Sofia, ул. „Незабравка" №25</div>
+      </div>
+
+      <div class="client-item">
+        <div class="client-name">Военна Болница</div>
+        <div class="client-address">гр. Sofia, ул. „Георги Софийски" №3</div>
+      </div>
+
+      <div class="client-item">
+        <div class="client-name">БДПЛР</div>
+        <div class="client-address">гр. Банкя, ул. „Иван Вазов" №5</div>
+      </div>
+
+      <div class="client-item">
+        <div class="client-name">Микс Констръкшън ООД</div>
+        <div class="client-address">гр. Sofia, ул. „Луи Айер" №2</div>
+      </div>
+
+      <div class="client-item">
+        <div class="client-name">МП – ГДИН – Затвор</div>
+        <div class="client-address">гр. Sofia</div>
+      </div>
+
+      <div class="client-item">
+        <div class="client-name">ГЕЛАК ООД</div>
+        <div class="client-address">гр. Sofia, ул. „Черковна" 75</div>
+      </div>
+
+      <div class="client-item">
+        <div class="client-name">Аматица АД</div>
+        <div class="client-address">с. Ковачевци</div>
+      </div>
+
+      <div class="client-item">
+        <div class="client-name">Бараж и Ко ЕООД</div>
+        <div class="client-address">гр. Sofia, ул. „Николай Хайтов" 2</div>
+      </div>
+
+      <div class="client-item">
+        <div class="client-name">П. З. Електроник ООД</div>
+        <div class="client-address">гр. Sofia, ул. „Бурел" 41В</div>
+      </div>
+
+      <div class="client-item">
+        <div class="client-name">126 ОУ П. Ю. Тодоров</div>
+        <div class="client-address">гр. Sofia, бул. „България" 43</div>
+      </div>
+
+      <div class="client-item">
+        <div class="client-name">С. Р. К. Корали АД</div>
+        <div class="client-address">гр. Sofia, ул. „Цветна Градина" 16</div>
+      </div>
+
+      <div class="client-item">
+        <div class="client-name">Минстрой Холдинг АД</div>
+        <div class="client-address">гр. Sofia, бул. „Драган Цанков" 172</div>
+      </div>
+
+      <div class="client-item">
+        <div class="client-name">ИРИСИСТ ЕООД</div>
+        <div class="client-address">Панчарево, ул. „Риляник" 19</div>
+      </div>
+
+      <div class="client-item">
+        <div class="client-name">ВИДМАР ЕООД</div>
+        <div class="client-address">гр. Sofia, бул. „Христо Ботев" 13</div>
+      </div>
+
+      <div class="client-item">
+        <div class="client-name">Сити Евро ЕООД</div>
+        <div class="client-address">гр. Sofia, ул. „Цветна Градина" 5</div>
+      </div>
+
+      <div class="client-item">
+        <div class="client-name">ЛАДА Груп ЕООД</div>
+        <div class="client-address">гр. Sofia, ж.к. „Люлин", бл. 986</div>
+      </div>
+
+      <div class="client-item">
+        <div class="client-name">Сдр-е SOS Детски Селища България</div>
+        <div class="client-address">гр. Sofia, ул. „Паскал Тодоров" 8А</div>
+      </div>
+
+      <div class="client-item">
+        <div class="client-name">Камор Ауто ЕООД</div>
+        <div class="client-address">гр. Sofia, ул. „Бизнес Парк" 5</div>
+      </div>
+
+      <div class="client-item">
+        <div class="client-name">Рамстрой ЕООД</div>
+        <div class="client-address">гр. Sofia, ул. „Майстор Алекси Рилец" 38</div>
+      </div>
+
+      <div class="client-item">
+        <div class="client-name">Балканфарма Дупница АД</div>
+        <div class="client-address">гр. Дупница, ул. „Самоковско шосе" 3</div>
+      </div>
+
+      <div class="client-item">
+        <div class="client-name">П. Дусман ЕООД</div>
+        <div class="client-address">гр. Sofia, ул. „Климент Охридски" 4</div>
+      </div>
+
+      <div class="client-item">
+        <div class="client-name">Столична Община – Район Средец</div>
+        <div class="client-address">гр. Sofia, ул. „Леге" 6</div>
+      </div>
+
+      <div class="client-item">
+        <div class="client-name">ТУ – София</div>
+        <div class="client-address">гр. Sofia, бул. „Климент Охридски" 8</div>
+      </div>
+
+      <div class="client-item">
+        <div class="client-name">192 СОУ</div>
+        <div class="client-address">Бистрица, ул. „Просвета" 11</div>
+      </div>
+
+      <div class="client-item">
+        <div class="client-name">Районен съд – Тетевен</div>
+        <div class="client-address">гр. Тетевен, ул. „Христо Ботев" 3А</div>
+      </div>
+
+      <div class="client-item">
+        <div class="client-name">Ауто Плюс България АД</div>
+        <div class="client-address">гр. Sofia, ул. „Околовръстен Път" 370</div>
+      </div>
+
+      <div class="client-item">
+        <div class="client-name">Шенкер ЕООД</div>
+        <div class="client-address">гр. Sofia, бул. „Искърско шосе" 7</div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <p><strong>Copyright © 2021 Вема 2005</strong></p>
+  </footer>
+
+</body>
 </html>
