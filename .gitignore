@@ -108,3 +108,5 @@ media/
 *.pid
 
 .idea
+/_site/
+/Gemfile.lock
