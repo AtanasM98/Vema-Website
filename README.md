@@ -30,10 +30,11 @@ Plain HTML and CSS — no frameworks, no build tools, no dependencies. The only 
 ├── index.html
 ├── clients.html
 ├── contacts.html
-├── README.md
 └── static/
     └── logo/
         └── vema-logo-long.png
+    └── css/
+        └── stylesheet.css
 ```
 
 ---
