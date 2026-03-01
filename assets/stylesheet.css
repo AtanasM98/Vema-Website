@@ -1,9 +1,9 @@
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
 :root {
-    --main: #0d1b2a;
-    --main-mid: #1b2e45;
-    --steel: #2d4a6b;
+    --main: #031e5e;
+    --main-mid: #3256a8;
+    --steel: #a3c8e9;
     --accent: #e80e0e;
     --accent-light: #e37e7e;
     --off-white: #f5f2ec;
@@ -288,7 +288,7 @@ nav ul a.active { color: var(--accent-light); }
 
 /* ── CONSULTING BAND ── */
 .consult-band {
-    background: var(--main-mid);
+    background: var(--main);
     color: #fff;
     padding: 4.5rem 2rem;
 }
