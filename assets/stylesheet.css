@@ -1,9 +1,9 @@
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
 :root {
-    --main: #031e5e;
-    --main-mid: #3256a8;
-    --steel: #a3c8e9;
+    --main: #0d1b2a;
+    --main-mid: #1b2e45;
+    --steel: #2d4a6b;
     --accent: #e80e0e;
     --accent-light: #e37e7e;
     --off-white: #f5f2ec;
@@ -27,7 +27,7 @@ header {
     position: sticky;
     top: 0;
     z-index: 100;
-    background: var(--main);
+    background: var(--off-white);
     border-bottom: 1px solid rgba(255,255,255,0.08);
 }
 
@@ -70,7 +70,7 @@ nav ul {
 }
 
 nav ul a {
-    color: rgba(255,255,255,0.75);
+    color: var(--text);
     text-decoration: none;
     font-size: 0.9rem;
     font-weight: 400;
