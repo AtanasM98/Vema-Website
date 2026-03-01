@@ -167,7 +167,12 @@ nav ul a.active { color: var(--accent-light); }
 
 .divider-bar {
     height: 4px;
-    background: linear-gradient(90deg, var(--accent) 0%, transparent 100%);
+    background: linear-gradient(90deg, var(--accent) 0%, transparent 80%);
+}
+
+.divider-bar-reverse {
+    height: 4px;
+    background: linear-gradient(270deg, var(--accent) 0%, transparent 80%);
 }
 
 /* ── SERVICES ── */
