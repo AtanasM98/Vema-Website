@@ -58,6 +58,20 @@ nav ul {
     gap: 2.5rem;
 }
 
+a {
+    color: var(--accent);
+    text-decoration: none;
+    transition: color 0.2s;
+}
+
+a:hover {
+    color: var(--accent-light);
+}
+
+a:visited {
+    color: var(--muted);
+}
+
 nav ul a {
     color: var(--text);
     text-decoration: none;
