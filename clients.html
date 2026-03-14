@@ -16,9 +16,9 @@ permalink: /clients/
 <!-- CLIENTS -->
 <section class="clients-section">
     <p class="section-label"></p>
-    <p class="section-intro">Горди сме с доверието, което ни е оказано от държавни институции, частни компании и
-        организации в цялата страна.</p>
-
+    <p class="section-intro">
+        Горди сме с доверието, което ни е оказано от държавни институции, частни компании и организации в цялата страна.
+    </p>
     <div class="counter-row">
         <div class="counter">
             <div class="counter-number">{{ site.data.clients | size }}<span>+</span></div>
@@ -37,8 +37,26 @@ permalink: /clients/
     <div class="clients-grid">
         {% for client in site.data.clients %}
         <div class="client-item">
-            <div class="client-name">{% if client.url %}<a href="{{ client.url }}">{{ client.name }}</a>{% else %}{{ client.name }}{% endif %}{% if client.suffix %}{{ client.suffix }}{% endif %}{% if client.note %}<span style="font-weight:300;">{{ client.note }}</span>{% endif %}</div>
-            {% if client.address %}<div class="client-address">{{ client.address }}</div>{% endif %}
+            <div class="client-name">
+                {% if client.url %}
+                    <a href="{{ client.url }}">{{ client.name }}</a>
+                {% else %}
+                    {{ client.name }}
+                {% endif %}
+                {% if client.suffix %}
+                    {{ client.suffix }}
+                {% endif %}
+                {% if client.note %}
+                    <span style="font-weight:300;">
+                        {{ client.note }}
+                    </span>
+                {% endif %}
+            </div>
+            {% if client.address %}
+                <div class="client-address">
+                    {{ client.address }}
+                </div>
+            {% endif %}
         </div>
         {% endfor %}
     </div>
